@@ -19,8 +19,11 @@ int main()
 	list* p9;
 	p9 = (list*)malloc(sizeof(list));		//判断是否成环
 
+	list* p12;
+	p12 = (list*)malloc(sizeof(list));		//奇偶对换
+
 	cout << "输入对应数字进入对应功能" << endl;
-	cout << "1.建立并输出单链表" << endl << "2.建立并正、反两向输出双向链表" << endl << "3.建立单链表并寻找中间节点" << endl<<"4.单链表反转"<<endl<<"5.单链表成环"<<endl;
+	cout << "1.建立并输出单链表" << endl << "2.建立并正、反两向输出双向链表" << endl << "3.建立单链表并寻找中间节点" << endl<<"4.单链表反转"<<endl<<"5.单链表成环"<<endl<<"6.奇偶对换"<<endl;
 	int i;
 	while (1)
 	{
@@ -41,6 +44,8 @@ int main()
 				break;
 			case 5:
 				loop(p9);
+			case 6:
+				exchange(p12);
 		}
 
 	}

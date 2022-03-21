@@ -21,3 +21,4 @@ void two(dlist* p2);
 void middle(list* p4);
 void turn(list* p6);
 void loop(list* p9);
+void exchange(list* p12);
